@@ -139,20 +139,22 @@
       color: #666;
     }
 
-    .research-block {
-      margin: 34px 0;
-      padding: 24px 28px;
-      border: 1px solid #ddd;
-      border-radius: 3px;
-      background: #fff;
+    .research-section {
+      border-top: 1px solid #ddd;
+      padding-top: 28px;
+      margin-top: 34px;
     }
 
-    .research-block-title {
-      font-size: 24px;
+    .research-section:first-of-type {
+      border-top: none;
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    .research-heading {
+      font-size: 26px;
       font-weight: 700;
       margin: 0 0 18px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #ddd;
     }
 
     .research-interests {
@@ -161,8 +163,12 @@
     }
 
     .paper-item {
-      padding: 18px 0;
-      border-bottom: 1px solid #e1e1e1;
+      padding: 20px 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .paper-item:first-of-type {
+      padding-top: 6px;
     }
 
     .paper-item:last-child {
@@ -264,10 +270,6 @@
       .cv-frame {
         height: 620px;
       }
-
-      .research-block {
-        padding: 20px;
-      }
     }
   </style>
 </head>
@@ -328,15 +330,15 @@
     <section id="research" class="page">
       <h2>Research</h2>
 
-      <div class="research-block">
-        <div class="research-block-title">Research Interests</div>
+      <div class="research-section">
+        <div class="research-heading">Research Interests</div>
         <p class="research-interests">
           Corporate investment; accounting information; voluntary disclosure; real options theory; textual analysis; NLP and LLM-based methods.
         </p>
       </div>
 
-      <div class="research-block">
-        <div class="research-block-title">Coauthored Working Papers</div>
+      <div class="research-section">
+        <div class="research-heading">Coauthored Working Papers</div>
 
         <div class="paper-item">
           <div class="paper-title">
@@ -373,8 +375,8 @@
         <p class="presentation-note">* Indicates presentations by coauthor.</p>
       </div>
 
-      <div class="research-block">
-        <div class="research-block-title">Selected Works in Progress</div>
+      <div class="research-section">
+        <div class="research-heading">Selected Works in Progress</div>
 
         <div class="paper-item">
           <div class="paper-title">Information Ban and Human Capital Investment</div>
