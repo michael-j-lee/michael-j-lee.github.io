@@ -10,7 +10,7 @@
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
+      line-height: 1.55;
       margin: 0;
       color: #111;
       background: #fff;
@@ -121,8 +121,8 @@
       font-size: 38px;
       font-weight: 400;
       text-align: center;
-      margin: 0 0 32px;
-      padding-bottom: 20px;
+      margin: 0 0 30px;
+      padding-bottom: 18px;
       border-bottom: 1px solid #ddd;
     }
 
@@ -136,8 +136,8 @@
 
     .research-section {
       border-top: 1px solid #ddd;
-      padding-top: 30px;
-      margin-top: 38px;
+      padding-top: 20px;
+      margin-top: 26px;
     }
 
     .research-section:first-of-type {
@@ -147,49 +147,55 @@
     }
 
     .research-heading {
-      font-size: 27px;
+      font-size: 22px;
       font-weight: 700;
-      margin: 0 0 18px;
+      margin: 0 0 10px;
     }
 
     .research-interests {
-      font-size: 17px;
-      margin-bottom: 0;
-      padding-left: 24px;
+      font-size: 16px;
+      margin: 0;
+      padding-left: 22px;
     }
 
     .research-interests li {
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
 
-    .numbered-paper {
-      display: grid;
-      grid-template-columns: 36px 1fr;
-      gap: 10px;
-      padding: 22px 0;
+    .paper-item {
+      padding: 13px 0 15px;
       border-bottom: 1px solid #e0e0e0;
     }
 
-    .numbered-paper:first-of-type {
-      padding-top: 8px;
+    .paper-item:first-of-type {
+      padding-top: 2px;
     }
 
-    .numbered-paper:last-child {
+    .paper-item:last-child {
       border-bottom: none;
       padding-bottom: 0;
     }
 
+    .paper-line {
+      display: flex;
+      gap: 8px;
+      align-items: baseline;
+    }
+
     .paper-number {
-      font-size: 19px;
       font-weight: 700;
       color: #333;
-      line-height: 1.5;
+      min-width: 32px;
+    }
+
+    .paper-content {
+      flex: 1;
     }
 
     .paper-title {
       font-weight: 700;
-      font-size: 19px;
-      margin-bottom: 3px;
+      font-size: 17px;
+      margin-bottom: 1px;
     }
 
     .paper-title a {
@@ -202,26 +208,54 @@
     }
 
     .authors {
-      margin-bottom: 4px;
+      margin-bottom: 2px;
+      font-size: 15.5px;
     }
 
     .status {
       color: #b00000;
       font-style: italic;
       font-weight: 600;
-      margin: 4px 0 8px;
+      margin: 2px 0 5px;
+      font-size: 15.5px;
     }
 
     .paper-details {
-      margin-top: 8px;
+      margin-top: 5px;
       margin-bottom: 0;
+      font-size: 15.5px;
+    }
+
+    .paper-details li {
+      margin-bottom: 2px;
+    }
+
+    details {
+      margin-top: 5px;
+      font-size: 15.5px;
+    }
+
+    summary {
+      cursor: pointer;
+      color: #007acc;
+      font-weight: 600;
+      display: inline-block;
+    }
+
+    details[open] summary {
+      margin-bottom: 4px;
+    }
+
+    .abstract-text {
+      margin: 5px 0 0;
+      color: #222;
     }
 
     .presentation-note {
-      font-size: 15px;
+      font-size: 14.5px;
       color: #555;
       font-style: italic;
-      margin-top: 16px;
+      margin-top: 10px;
     }
 
     ul {
@@ -286,8 +320,12 @@
         height: 620px;
       }
 
-      .numbered-paper {
-        grid-template-columns: 30px 1fr;
+      .paper-line {
+        gap: 6px;
+      }
+
+      .paper-number {
+        min-width: 28px;
       }
     }
   </style>
@@ -364,44 +402,59 @@
       <div class="research-section">
         <div class="research-heading">Coauthored Working Papers</div>
 
-        <div class="numbered-paper">
-          <div class="paper-number">1.</div>
-          <div>
-            <div class="paper-title">
-              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5180253" target="_blank">
-                From Green to Green: Local Parks and Corporate Green Transition
-              </a>
+        <div class="paper-item">
+          <div class="paper-line">
+            <div class="paper-number">[1]</div>
+            <div class="paper-content">
+              <div class="paper-title">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5180253" target="_blank">
+                  From Green to Green: Local Parks and Corporate Green Transition
+                </a>
+              </div>
+              <div class="authors">with Eric Yeung (Cornell) and Yao Lu (Cornell)</div>
+              <div class="status">R&amp;R at Journal of Accounting Research</div>
+              <ul class="paper-details">
+                <li>Based on first-year proposal at Cornell University.</li>
+                <li>Presentations: 2026 Hawaii Accounting Research Conference, Cornell University*, University of Rochester*, University of Hong Kong*.</li>
+              </ul>
+              <details>
+                <summary>Abstract ▼</summary>
+                <p class="abstract-text">
+                  We identify the openings of new urban parks in major U.S. cities as “green shocks” and examine whether increases in green space near firms’ headquarters are associated with firms’ green transition, as manifested in both real effects, such as carbon emissions, and information effects, such as voluntary environmental disclosure. Consistent with dynamic green transition theory, we document significant declines in firms’ carbon emissions and increases in voluntary environmental disclosure following green shocks, especially among firms that rely more heavily on external financing for green transition. Evidence from satellite imagery further supports green exposure as a plausible mechanism.
+                </p>
+              </details>
             </div>
-            <div class="authors">with Eric Yeung (Cornell) and Yao Lu (Cornell)</div>
-            <div class="status">R&amp;R at Journal of Accounting Research</div>
-            <ul class="paper-details">
-              <li>Based on first-year proposal at Cornell University.</li>
-              <li>Presentations: 2026 Hawaii Accounting Research Conference, Cornell University*, University of Rochester*, University of Hong Kong*.</li>
-              <li>
-                We identify the openings of new urban parks in major U.S. cities as “green shocks” and examine whether increases in green space near firms’ headquarters are associated with firms’ green transition, as manifested in both real effects, such as carbon emissions, and information effects, such as voluntary environmental disclosure. Consistent with dynamic green transition theory, we document significant declines in firms’ carbon emissions and increases in voluntary environmental disclosure following green shocks, especially among firms that rely more heavily on external financing for green transition. Evidence from satellite imagery further supports green exposure as a plausible mechanism.
-              </li>
-            </ul>
           </div>
         </div>
 
-        <div class="numbered-paper">
-          <div class="paper-number">2.</div>
-          <div>
-            <div class="paper-title">Government-Produced Disclosure and Corporate Investment Decisions: Evidence from Housing Construction</div>
-            <div class="authors">with Mani Sethuraman (Cornell)</div>
-            <div class="muted">Preparing for journal submission</div>
+        <div class="paper-item">
+          <div class="paper-line">
+            <div class="paper-number">[2]</div>
+            <div class="paper-content">
+              <div class="paper-title">Government-Produced Disclosure and Corporate Investment Decisions: Evidence from Housing Construction</div>
+              <div class="authors">with Mani Sethuraman (Cornell)</div>
+              <div class="muted">Preparing for journal submission</div>
+            </div>
           </div>
         </div>
 
-        <div class="numbered-paper">
-          <div class="paper-number">3.</div>
-          <div>
-            <div class="paper-title">Proprietary Costs of R&amp;D Capitalization</div>
-            <div class="authors">with Jaeho Yoo (UNC)</div>
-            <div class="muted">Preparing for journal submission</div>
-            <ul class="paper-details">
-              <li>Presentations: 2026 AAA Global Connect scheduled, Cornell University, University of North Carolina at Chapel Hill*.</li>
-            </ul>
+        <div class="paper-item">
+          <div class="paper-line">
+            <div class="paper-number">[3]</div>
+            <div class="paper-content">
+              <div class="paper-title">Proprietary Costs of R&amp;D Capitalization</div>
+              <div class="authors">with Jaeho Yoo (UNC)</div>
+              <div class="muted">Preparing for journal submission</div>
+              <ul class="paper-details">
+                <li>Presentations: 2026 AAA Global Connect scheduled, Cornell University, University of North Carolina at Chapel Hill*.</li>
+              </ul>
+              <details>
+                <summary>Abstract ▼</summary>
+                <p class="abstract-text">
+                  We examine whether R&amp;D capitalization generates proprietary costs by transmitting information to product-market competitors. Under IFRS, development costs are capitalized once technological feasibility and commercial viability are achieved, conveying credible information that these thresholds have been met. Using first-time R&amp;D capitalization by cross-listed foreign peers as an information shock, we find that treated U.S. firms exhibit a 13.1 percent increase in patent value relative to control firms three years after peer capitalization, with no corresponding increase in patent counts. The effect is stronger when capitalization is accompanied by greater R&amp;D disclosure and when alternative public innovation information is limited. In contrast, the effect becomes negative when peers exhibit high relative technological dominance. Additional tests indicate that the results are consistent with uncertainty reduction and depend on the clarity of the capitalization signal. Our findings suggest that R&amp;D capitalization can generate proprietary costs by influencing competitors’ innovation outcomes.
+                </p>
+              </details>
+            </div>
           </div>
         </div>
 
@@ -411,19 +464,23 @@
       <div class="research-section">
         <div class="research-heading">Selected Works in Progress</div>
 
-        <div class="numbered-paper">
-          <div class="paper-number">1.</div>
-          <div>
-            <div class="paper-title">Information Ban and Human Capital Investment</div>
-            <div class="authors">with Bobby Lin (Cornell) and David Park (CUHK, Shenzhen)</div>
+        <div class="paper-item">
+          <div class="paper-line">
+            <div class="paper-number">[1]</div>
+            <div class="paper-content">
+              <div class="paper-title">Information Ban and Human Capital Investment</div>
+              <div class="authors">with Bobby Lin (Cornell) and David Park (CUHK, Shenzhen)</div>
+            </div>
           </div>
         </div>
 
-        <div class="numbered-paper">
-          <div class="paper-number">2.</div>
-          <div>
-            <div class="paper-title">Accounting Information and Real Options: Evidence from Oil Drilling Activity</div>
-            <div class="authors">with Songyi Han (Norwegian Business School)</div>
+        <div class="paper-item">
+          <div class="paper-line">
+            <div class="paper-number">[2]</div>
+            <div class="paper-content">
+              <div class="paper-title">Accounting Information and Real Options: Evidence from Oil Drilling Activity</div>
+              <div class="authors">with Songyi Han (Norwegian Business School)</div>
+            </div>
           </div>
         </div>
       </div>
@@ -469,11 +526,11 @@
       </p>
 
       <blockquote>
-        “I wanted to take this opportunity to express my appreciation for your hard work and support... Your explanations and insights really helped me grasp the concepts in accounting, and I truly enjoyed your classes.”
-      </blockquote>
-      
-      <blockquote>
         “The lectures are very well organized and do a good job of presenting the information.”
+      </blockquote>
+
+      <blockquote>
+        “I wanted to take this opportunity to express my appreciation for your hard work and support during the first half of the semester. Your explanations and insights really helped me grasp the concepts in accounting, and I truly enjoyed your classes.”
       </blockquote>
 
       <blockquote>
