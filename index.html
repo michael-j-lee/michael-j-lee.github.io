@@ -4,15 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Michael Lee | Ph.D. Student in Accounting at Cornell University</title>
-  <meta name="description" content="Michael Lee, also known as Junghoon Lee, is a Ph.D. student in Accounting at Cornell University. His research studies accounting information, corporate investment, real options theory, voluntary disclosure, and textual analysis using NLP and LLM-based methods." />
+  <title>Michael J. Lee | Ph.D. Candidate in Accounting at Cornell University</title>
+  <meta name="description" content="Michael J. Lee is a Ph.D. Candidate in Accounting at Cornell University. His research studies accounting information, corporate investment, real options theory, voluntary disclosure, and textual analysis using NLP and LLM-based methods." />
 
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
       margin: 0;
-      color: #222;
+      color: #111;
       background: #fff;
     }
 
@@ -24,8 +24,8 @@
 
     nav {
       border-bottom: 1px solid #ddd;
-      padding: 16px 0;
-      margin-bottom: 48px;
+      padding: 15px 0;
+      margin-bottom: 46px;
     }
 
     .nav-content {
@@ -44,38 +44,40 @@
       text-decoration: none;
     }
 
-    .brand span {
-      font-weight: 400;
-      color: #666;
-    }
-
     .nav-links a {
-      margin-left: 22px;
+      margin-left: 24px;
       color: #333;
       text-decoration: none;
       font-size: 16px;
+      cursor: pointer;
     }
 
-    .nav-links a:hover {
+    .nav-links a:hover,
+    .nav-links a.active {
       color: #007acc;
+    }
+
+    .page {
+      display: none;
+      padding-bottom: 50px;
+    }
+
+    .page.active {
+      display: block;
     }
 
     .hero {
       display: grid;
       grid-template-columns: 1fr 280px;
-      gap: 44px;
+      gap: 50px;
       align-items: start;
-      margin-bottom: 42px;
     }
 
     h1 {
       font-size: 42px;
       margin: 0 0 8px;
       line-height: 1.2;
-    }
-
-    h1 span {
-      font-weight: 400;
+      font-weight: 700;
     }
 
     .affiliation {
@@ -114,21 +116,19 @@
       color: #fff;
     }
 
-    section {
-      border-top: 1px solid #ddd;
-      padding: 34px 0;
-    }
-
     h2 {
-      font-size: 34px;
+      font-size: 38px;
       font-weight: 400;
       text-align: center;
-      margin: 0 0 28px;
+      margin: 0 0 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
     }
 
     h3 {
-      margin-bottom: 4px;
-      font-size: 20px;
+      font-size: 22px;
+      margin-top: 28px;
+      margin-bottom: 8px;
     }
 
     a {
@@ -136,7 +136,7 @@
     }
 
     .paper {
-      margin-bottom: 24px;
+      margin-bottom: 28px;
     }
 
     .paper-title {
@@ -150,6 +150,27 @@
 
     ul {
       margin-top: 8px;
+    }
+
+    .note {
+      font-style: italic;
+      color: #444;
+      margin-top: 20px;
+    }
+
+    .cv-frame {
+      width: 100%;
+      height: 900px;
+      border: 1px solid #ccc;
+      margin-bottom: 18px;
+    }
+
+    blockquote {
+      border-left: 3px solid #ddd;
+      margin: 10px 0 14px;
+      padding-left: 14px;
+      color: #333;
+      font-style: italic;
     }
 
     footer {
@@ -182,6 +203,10 @@
         margin-left: 0;
         margin-right: 16px;
       }
+
+      .cv-frame {
+        height: 620px;
+      }
     }
   </style>
 </head>
@@ -189,56 +214,62 @@
 <body>
   <nav>
     <div class="nav-content">
-      <a class="brand" href="#">Michael <span>Lee</span></a>
+      <a class="brand" onclick="showPage('about')">Michael J. Lee</a>
       <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#vitae">Vitae</a>
-        <a href="#teaching">Teaching</a>
+        <a id="nav-about" onclick="showPage('about')">About</a>
+        <a id="nav-research" onclick="showPage('research')">Research</a>
+        <a id="nav-vitae" onclick="showPage('vitae')">Vitae</a>
+        <a id="nav-teaching" onclick="showPage('teaching')">Teaching</a>
       </div>
     </div>
   </nav>
 
   <main class="container">
-    <section id="about" class="hero" style="border-top: none; padding-top: 0;">
-      <div>
-        <h1>Michael <span>(Junghoon) Lee</span></h1>
-        <div class="affiliation">
-          Ph.D. Student in Accounting, Cornell University
+    <section id="about" class="page">
+      <div class="hero">
+        <div>
+          <h1>Michael J. Lee</h1>
+          <div class="affiliation">
+            Ph.D. Candidate in Accounting, Cornell University
+          </div>
+
+          <p>
+            I am a Ph.D. Candidate in Accounting at Cornell University. My research examines how accounting information interacts with corporate investment decisions, particularly under uncertainty and through the lens of real options theory.
+          </p>
+
+          <p>
+            Methodologically, I use textual analysis, including NLP and LLM-based approaches, to study firms’ disclosure, information environments, and investment decisions.
+          </p>
+
+          <p>
+            Prior to joining Cornell, I worked for four years at PricewaterhouseCoopers in Seoul as an auditor and advisor. My work included valuation engagements, buy-side due diligence, accounting advisory projects, internal control engagements, and audits across multiple industries.
+          </p>
+
+          <p>
+            I am a Certified Public Accountant in Korea and have also served as a mentor for new staff CPAs, organizing educational sessions for junior professionals.
+          </p>
+
+          <p>
+            Outside research, I enjoy swimming and cooking Korean and Italian food, sometimes with a fusion twist.
+          </p>
+
+          <div class="buttons">
+            <a class="button" href="mailto:jl3355@cornell.edu">Email</a>
+            <a class="button" href="https://www.linkedin.com/in/michael-lee-ba9158269/" target="_blank">LinkedIn</a>
+            <a class="button" href="https://www.johnson.cornell.edu/programs/phd-program/current-students/jl3355/" target="_blank">Cornell</a>
+            <a class="button" href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6702865" target="_blank">SSRN</a>
+            <a class="button" href="https://orcid.org/0000-0001-6919-282X" target="_blank">ORCID</a>
+            <a class="button" href="cv.pdf" target="_blank">CV</a>
+          </div>
         </div>
 
-        <p>
-          I am a Ph.D. student in Accounting at Cornell University. My research examines how accounting information interacts with corporate investment decisions, particularly under uncertainty and through the lens of real options theory.
-        </p>
-
-        <p>
-          Methodologically, I use textual analysis, including NLP and LLM-based approaches, to study firms’ disclosure, information environments, and investment decisions.
-        </p>
-
-        <p>
-          Prior to joining Cornell, I worked for four years at PricewaterhouseCoopers in Seoul as an auditor and advisor. As a member of PwC Korea’s in-house valuation specialist group, I worked on valuation engagements involving goodwill, unlisted stocks, convertible bonds, bonds with warrants, and purchase price allocation. I also participated in buy-side due diligence, accounting advisory projects, internal control engagements, and audits across multiple industries.
-        </p>
-
-        <p>
-          I am a Certified Public Accountant and have also served as a mentor for new staff CPAs, organizing educational sessions for junior professionals.
-        </p>
-
-        <div class="buttons">
-          <a class="button" href="mailto:jl3355@cornell.edu">Email</a>
-          <a class="button" href="https://www.linkedin.com/in/michael-lee-ba9158269/" target="_blank">LinkedIn</a>
-          <a class="button" href="https://www.johnson.cornell.edu/programs/phd-program/current-students/jl3355/" target="_blank">Cornell</a>
-          <a class="button" href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6702865" target="_blank">SSRN</a>
-          <a class="button" href="https://orcid.org/0000-0001-6919-282X" target="_blank">ORCID</a>
-          <a class="button" href="cv.pdf" target="_blank">CV</a>
+        <div>
+          <img class="headshot" src="headshot.jpg" alt="Michael J. Lee headshot" />
         </div>
-      </div>
-
-      <div>
-        <img class="headshot" src="headshot.jpg" alt="Michael Lee headshot" />
       </div>
     </section>
 
-    <section id="research">
+    <section id="research" class="page">
       <h2>Research</h2>
 
       <h3>Research Interests</h3>
@@ -253,9 +284,10 @@
         <div>with Eric Yeung and Yao Lu</div>
         <div class="muted">R&amp;R at Journal of Accounting Research</div>
         <ul>
-          <li>Presented at the Hawaii Accounting Research Conference, 2026.</li>
+          <li>Based on first-year proposal at Cornell University.</li>
+          <li>Presentations: 2026 Hawaii Accounting Research Conference, Cornell University*, University of Rochester*, University of Hong Kong*.</li>
           <li>
-            We identify openings of new urban parks in major U.S. cities as “green shocks” and examine whether increases in green space near firms’ headquarters are associated with firms’ green transition, including carbon emissions and voluntary environmental disclosure.
+            We identify the openings of new urban parks in major U.S. cities as “green shocks” and examine whether increases in green space near firms’ headquarters are associated with firms’ green transition, as manifested in both real effects, such as carbon emissions, and information effects, such as voluntary environmental disclosure. Consistent with dynamic green transition theory, we document significant declines in firms’ carbon emissions and increases in voluntary environmental disclosure following green shocks, especially among firms that rely more heavily on external financing for green transition. Evidence from satellite imagery further supports green exposure as a plausible mechanism.
           </li>
         </ul>
       </div>
@@ -271,10 +303,11 @@
         <div>with Jaeho Yoo</div>
         <div class="muted">Preparing for journal submission</div>
         <ul>
-          <li>Presented at Cornell Accounting Brownbag, 2025.</li>
-          <li>Scheduled for presentation at AAA Global Connect, 2026.</li>
+          <li>Presentations: 2026 AAA Global Connect scheduled, Cornell University, University of North Carolina at Chapel Hill*.</li>
         </ul>
       </div>
+
+      <p class="note">* Indicates presentations by coauthor.</p>
 
       <h3>Selected Works in Progress</h3>
 
@@ -289,41 +322,56 @@
       </div>
     </section>
 
-    <section id="vitae">
+    <section id="vitae" class="page">
       <h2>Vitae</h2>
 
-      <p>
-        You can download my current CV here:
-        <a href="cv.pdf" target="_blank">CV PDF</a>.
-      </p>
+      <iframe class="cv-frame" src="cv.pdf"></iframe>
 
-      <h3>Education</h3>
-      <ul>
-        <li><strong>Cornell University</strong>, Ph.D. in Accounting, 2022–2027 expected</li>
-        <li><strong>Seoul National University</strong>, M.S. in Business Administration, 2022</li>
-        <li><strong>Indiana University</strong>, B.A. in Economics, minor in Mathematics, 2016</li>
-        <li><strong>SungKyunKwan University</strong>, B.Econ. in Global Economics, 2017</li>
-      </ul>
-
-      <h3>Professional Experience</h3>
       <p>
-        <strong>PricewaterhouseCoopers, Seoul</strong>, Senior Associate, 2016–2020.
+        <a href="cv.pdf" target="_blank">Download CV PDF</a>
       </p>
-      <ul>
-        <li>Worked on valuation, due diligence, accounting advisory, internal control, and audit engagements.</li>
-        <li>Engaged in valuation reports involving goodwill, unlisted stocks, convertible bonds, bonds with warrants, and purchase price allocation.</li>
-        <li>Issued auditor’s reports for more than 25 companies across 9 industries, with specialization in impairment testing.</li>
-      </ul>
     </section>
 
-    <section id="teaching">
+    <section id="teaching" class="page">
       <h2>Teaching</h2>
 
+      <p>
+        My teaching emphasizes being readily available to students and motivating why the material matters. I often use examples from my professional experience as an auditor and advisor, as well as real-world business cases, to connect accounting concepts to practice.
+      </p>
+
       <h3>Instructor, Cornell University</h3>
-      <ul>
-        <li><strong>Financial Accounting</strong>, Fall 2025. Student evaluation: 5.0/5.0 median rating.</li>
-        <li><strong>Financial Accounting</strong>, Fall 2024. Student evaluation: 5.0/5.0 median rating.</li>
-      </ul>
+
+      <p>
+        <strong>Financial Accounting</strong>, Fall 2025. Student evaluation: 5.0/5.0 median rating.
+      </p>
+
+      <blockquote>
+        “I liked Michael.”
+      </blockquote>
+
+      <blockquote>
+        “The instructor is very eager in office hour and ready to answer any questions.”
+      </blockquote>
+
+      <blockquote>
+        “I enjoyed the teacher alot.”
+      </blockquote>
+
+      <p>
+        <strong>Financial Accounting</strong>, Fall 2024. Student evaluation: 5.0/5.0 median rating.
+      </p>
+
+      <blockquote>
+        “The lectures are very well organized and do a good job of presenting the information.”
+      </blockquote>
+
+      <blockquote>
+        “I really enjoyed how clear the instructor was.”
+      </blockquote>
+
+      <blockquote>
+        “When the instructor shared learnings from his professional career.”
+      </blockquote>
 
       <h3>Teaching Assistant</h3>
       <ul>
@@ -335,7 +383,24 @@
   </main>
 
   <footer>
-    © Michael Lee. Last updated 2026.
+    © Michael J. Lee. Last updated 2026.
   </footer>
+
+  <script>
+    function showPage(pageId) {
+      const pages = document.querySelectorAll('.page');
+      const navLinks = document.querySelectorAll('.nav-links a');
+
+      pages.forEach(page => page.classList.remove('active'));
+      navLinks.forEach(link => link.classList.remove('active'));
+
+      document.getElementById(pageId).classList.add('active');
+      document.getElementById('nav-' + pageId).classList.add('active');
+
+      window.scrollTo(0, 0);
+    }
+
+    showPage('about');
+  </script>
 </body>
 </html>
