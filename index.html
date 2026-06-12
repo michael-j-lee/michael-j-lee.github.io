@@ -127,9 +127,8 @@
     }
 
     h3 {
-      font-size: 22px;
-      margin-top: 28px;
-      margin-bottom: 8px;
+      font-size: 24px;
+      margin: 0 0 14px;
     }
 
     a {
@@ -140,13 +139,35 @@
       color: #666;
     }
 
-    .research-subsection {
-      margin-top: 30px;
+    .research-block {
+      margin: 34px 0;
+      padding: 24px 28px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      background: #fff;
+    }
+
+    .research-block-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 0 18px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .research-interests {
+      font-size: 17px;
+      margin-bottom: 0;
     }
 
     .paper-item {
-      padding: 16px 0 18px;
-      border-bottom: 1px solid #ddd;
+      padding: 18px 0;
+      border-bottom: 1px solid #e1e1e1;
+    }
+
+    .paper-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
     }
 
     .paper-title {
@@ -173,12 +194,6 @@
       font-style: italic;
       font-weight: 600;
       margin: 4px 0 8px;
-    }
-
-    .section-divider {
-      border-top: 1px solid #bbb;
-      margin: 42px 0 16px;
-      padding-top: 20px;
     }
 
     .presentation-note {
@@ -249,6 +264,10 @@
       .cv-frame {
         height: 620px;
       }
+
+      .research-block {
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -309,15 +328,15 @@
     <section id="research" class="page">
       <h2>Research</h2>
 
-      <div class="research-subsection">
-        <h3>Research Interests</h3>
-        <p>
+      <div class="research-block">
+        <div class="research-block-title">Research Interests</div>
+        <p class="research-interests">
           Corporate investment; accounting information; voluntary disclosure; real options theory; textual analysis; NLP and LLM-based methods.
         </p>
       </div>
 
-      <div class="research-subsection">
-        <h3>Coauthored Working Papers</h3>
+      <div class="research-block">
+        <div class="research-block-title">Coauthored Working Papers</div>
 
         <div class="paper-item">
           <div class="paper-title">
@@ -354,8 +373,8 @@
         <p class="presentation-note">* Indicates presentations by coauthor.</p>
       </div>
 
-      <div class="section-divider">
-        <h3>Selected Works in Progress</h3>
+      <div class="research-block">
+        <div class="research-block-title">Selected Works in Progress</div>
 
         <div class="paper-item">
           <div class="paper-title">Information Ban and Human Capital Investment</div>
