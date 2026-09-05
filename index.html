@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Michael Lee | Cornell Accounting Ph.D. Candidate</title>
-<meta name="description" content="Michael Lee is a Cornell Accounting Ph.D. Candidate. His research focuses on accounting information, corporate investment, voluntary disclosure, real options theory, and textual analysis using NLP and LLM-based methods." />
+  <meta name="description" content="Michael Lee is a Cornell Accounting Ph.D. Candidate on the 2026-27 academic job market. His research examines how accounting information shapes corporate investment decisions, particularly under uncertainty, using NLP- and LLM-based textual analysis and novel data." />
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RH1S2YCPRT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RH1S2YCPRT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-RH1S2YCPRT');
-</script>
+    gtag('config', 'G-RH1S2YCPRT');
+  </script>
 
-<style>
+  <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.55;
@@ -110,6 +110,10 @@
       box-shadow: 0 3px 12px rgba(0,0,0,0.25);
     }
 
+    .mobile-headshot {
+      display: none;
+    }
+
     .buttons {
       margin-top: 28px;
       display: flex;
@@ -157,16 +161,6 @@
       font-size: 22px;
       font-weight: 700;
       margin: 0 0 10px;
-    }
-
-    .research-interests {
-      font-size: 16px;
-      margin: 0;
-      padding-left: 22px;
-    }
-
-    .research-interests li {
-      margin-bottom: 6px;
     }
 
     .paper-item {
@@ -265,8 +259,13 @@
       margin-top: 10px;
     }
 
-    ul {
+    ul,
+    ol {
       margin-top: 8px;
+    }
+
+    .teaching-pillars li {
+      margin-bottom: 14px;
     }
 
     .cv-frame {
@@ -282,14 +281,6 @@
       padding-left: 14px;
       color: #333;
       font-style: italic;
-    }
-
-    .quote-context {
-      display: block;
-      margin-top: 6px;
-      color: #666;
-      font-size: 14px;
-      font-style: normal;
     }
 
     .teaching-heading {
@@ -311,10 +302,17 @@
     @media (max-width: 760px) {
       .hero {
         grid-template-columns: 1fr;
+        gap: 0;
       }
 
-      .headshot {
+      .desktop-headshot {
+        display: none;
+      }
+
+      .mobile-headshot {
+        display: block;
         max-width: 220px;
+        margin: 18px 0 22px;
       }
 
       .nav-content {
@@ -346,9 +344,11 @@
 </head>
 
 <body>
+
   <nav>
     <div class="nav-content">
       <a class="brand" onclick="showPage('about')">Michael J. Lee</a>
+
       <div class="nav-links">
         <a id="nav-about" onclick="showPage('about')">About</a>
         <a id="nav-research" onclick="showPage('research')">Research</a>
@@ -359,28 +359,38 @@
   </nav>
 
   <main class="container">
+
+    <!-- ABOUT -->
     <section id="about" class="page">
       <div class="hero">
+
         <div>
           <h1>Michael J. Lee</h1>
+
           <div class="affiliation">
             Ph.D. Candidate in Accounting, Cornell University
           </div>
+
+          <img
+            class="headshot mobile-headshot"
+            src="headshotv2.jpg"
+            alt="Michael Lee Cornell Accounting Ph.D. Candidate headshot"
+          />
 
           <div class="job-market">
             I am on the 2026–27 academic job market.
           </div>
 
           <p>
-            My research examines how accounting information shapes corporate investment decisions, particularly under uncertainty. I conduct archival research and often leverage textual analysis, including NLP- and LLM-based approaches, in my work.
+            My research examines how accounting information shapes corporate investment decisions, particularly under uncertainty. I combine NLP- and LLM-based textual analysis with novel data, including drilling permits, housing construction records, and satellite imagery.
           </p>
 
           <p>
-            Prior to joining Cornell, I worked for 4 years at PricewaterhouseCoopers in Seoul, Korea as an auditor, advisor, and in-house valuation specialist. My work included valuation engagements, buy-side due diligence, accounting advisory projects, internal control engagements, and audits across multiple industries.
+            My job market paper studies firms' decisions to issue quantitative CAPEX guidance from a real options perspective. I show that voluntary disclosure can affect investment not only through financing channels but also directly, by constraining firms' investment flexibility.
           </p>
 
           <p>
-            I am a Certified Public Accountant in Korea (KICPA) and have also served as a mentor for new staff CPAs, organizing educational sessions for junior professionals.
+            Before joining Cornell, I spent 4 years at PwC Korea as an auditor and valuation specialist, with experience in audit, valuation, due diligence, accounting advisory, and internal control engagements. I am also a Certified Public Accountant in Korea (KICPA).
           </p>
 
           <p>
@@ -389,187 +399,345 @@
 
           <div class="buttons">
             <a class="button" href="mailto:jl3355@cornell.edu">Email</a>
-            <a class="button" href="https://www.linkedin.com/in/michael-lee-ba9158269/" target="_blank">LinkedIn</a>
-            <a class="button" href="https://business.cornell.edu/profiles/jl3355/" target="_blank">Cornell</a>
-            <a class="button" href="https://orcid.org/0000-0001-6919-282X" target="_blank">ORCID</a>
-            <a class="button" href="cv.pdf" target="_blank">CV</a>
+
+            <a
+              class="button"
+              href="https://www.linkedin.com/in/michael-lee-ba9158269/"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              class="button"
+              href="https://business.cornell.edu/profiles/jl3355/"
+              target="_blank"
+            >
+              Cornell
+            </a>
+
+            <a
+              class="button"
+              href="https://orcid.org/0000-0001-6919-282X"
+              target="_blank"
+            >
+              ORCID
+            </a>
+
+            <a class="button" href="cv.pdf" target="_blank">
+              CV
+            </a>
           </div>
         </div>
 
-        <div>
-          <img class="headshot" src="headshotv2.jpg" alt="Michael Lee Cornell Accounting Ph.D. Candidate headshot" />
+        <div class="desktop-headshot">
+          <img
+            class="headshot"
+            src="headshotv2.jpg"
+            alt="Michael Lee Cornell Accounting Ph.D. Candidate headshot"
+          />
         </div>
+
       </div>
     </section>
 
+
+    <!-- RESEARCH -->
     <section id="research" class="page">
-      <div class="research-section">
-        <div class="research-heading">Research Interests</div>
-        <ul class="research-interests">
-          <li>
-            <strong>Keywords:</strong> Corporate investment; accounting information; voluntary disclosure; real options theory; textual analysis; NLP and LLM-based methods
-          </li>
-          <li>
-            My research examines how accounting information shapes corporate investment decisions, particularly under uncertainty. I conduct archival research and often leverage textual analysis, including NLP- and LLM-based approaches, in my work.
-          </li>
-        </ul>
-      </div>
 
       <div class="research-section">
+        <div class="research-heading">Research Interests</div>
+
+        <p>
+          My research examines how accounting information shapes corporate investment decisions, particularly under uncertainty. I combine NLP- and LLM-based textual analysis with novel data, including drilling permits, housing construction records, and satellite imagery.
+        </p>
+      </div>
+
+
+      <div class="research-section">
+
         <div class="research-heading">Working Papers</div>
+
 
         <div class="paper-item">
           <div class="paper-line">
+
             <div class="paper-number">[1]</div>
+
             <div class="paper-content">
-              <div class="paper-title">CAPEX Guidance and Realizable Real Options</div>
-              <div class="status">Dissertation</div>
+
+              <div class="paper-title">
+                CAPEX Guidance and Realizable Real Options
+              </div>
+
+              <div class="status">
+                Dissertation
+              </div>
+
               <ul class="paper-details">
                 <li>Presentations: Cornell University</li>
               </ul>
+
             </div>
           </div>
         </div>
 
+
         <div class="paper-item">
           <div class="paper-line">
+
             <div class="paper-number">[2]</div>
+
             <div class="paper-content">
+
               <div class="paper-title">
-                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5180253" target="_blank">
+                <a
+                  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5180253"
+                  target="_blank"
+                >
                   From Green to Green: Local Parks and Corporate Green Transition
                 </a>
               </div>
-              <div class="authors">with Eric Yeung (Cornell) and Yao Lu (Cornell)</div>
-              <div class="status">R&amp;R at Journal of Accounting Research</div>
+
+              <div class="authors">
+                with Eric Yeung (Cornell) and Yao Lu (Cornell)
+              </div>
+
+              <div class="status">
+                R&amp;R at Journal of Accounting Research
+              </div>
+
               <ul class="paper-details">
-                <li>Based on first-year proposal at Cornell University</li>
-                <li>Presentations: 2026 Hawaii Accounting Research Conference, Cornell University*, University of Rochester*, University of Hong Kong*</li>
+                <li>
+                  Based on first-year proposal at Cornell University
+                </li>
+
+                <li>
+                  Presentations: 2026 Hawaii Accounting Research Conference, Cornell University*, University of Rochester*, University of Hong Kong*
+                </li>
               </ul>
+
               <details>
                 <summary>Abstract ▼</summary>
+
                 <p class="abstract-text">
                   We identify the openings of new urban parks in major U.S. cities as “green shocks” and examine whether increases in green space near firms’ headquarters are associated with firms’ green transition, as manifested in both real effects, such as carbon emissions, and information effects, such as voluntary environmental disclosure. Consistent with dynamic green transition theory, we document significant declines in firms’ carbon emissions and increases in voluntary environmental disclosure following green shocks, especially among firms that rely more heavily on external financing for green transition. Evidence from satellite imagery further supports green exposure as a plausible mechanism.
                 </p>
               </details>
+
             </div>
           </div>
         </div>
 
+
         <div class="paper-item">
           <div class="paper-line">
+
             <div class="paper-number">[3]</div>
+
             <div class="paper-content">
-              <div class="paper-title">Government-Produced Disclosure and Corporate Investment Decisions: Evidence from Housing Construction</div>
-              <div class="authors">with Mani Sethuraman (Cornell)</div>
-              <div class="muted">Preparing for journal submission</div>
+
+              <div class="paper-title">
+                Government-Produced Disclosure and Corporate Investment Decisions: Evidence from Housing Construction
+              </div>
+
+              <div class="authors">
+                with Mani Sethuraman (Cornell)
+              </div>
+
+              <div class="muted">
+                Preparing for journal submission
+              </div>
+
             </div>
           </div>
         </div>
+
 
         <div class="paper-item">
           <div class="paper-line">
+
             <div class="paper-number">[4]</div>
+
             <div class="paper-content">
-              <div class="paper-title">Proprietary Costs of R&amp;D Capitalization</div>
-              <div class="authors">with Jaeho Yoo (UNC)</div>
-              <div class="muted">Preparing for journal submission</div>
+
+              <div class="paper-title">
+                Proprietary Costs of R&amp;D Capitalization
+              </div>
+
+              <div class="authors">
+                with Jaeho Yoo (UNC)
+              </div>
+
+              <div class="muted">
+                Preparing for journal submission
+              </div>
+
               <ul class="paper-details">
-                <li>Presentations: 2026 AAA Global Connect (scheduled), Cornell University, University of North Carolina at Chapel Hill*</li>
+                <li>
+                  Presentations: 2026 AAA Global Connect, Cornell University, University of North Carolina at Chapel Hill*
+                </li>
               </ul>
+
             </div>
           </div>
         </div>
 
-        <p class="presentation-note">* Indicates presentations by coauthor.</p>
+        <p class="presentation-note">
+          * Indicates presentations by coauthor.
+        </p>
+
       </div>
+
 
       <div class="research-section">
-        <div class="research-heading">Selected Works in Progress</div>
+
+        <div class="research-heading">
+          Selected Works in Progress
+        </div>
+
 
         <div class="paper-item">
           <div class="paper-line">
+
             <div class="paper-number">[1]</div>
+
             <div class="paper-content">
-              <div class="paper-title">Information Ban and Human Capital Investment</div>
-              <div class="authors">with Bobby Lin (Cornell) and David Park (CUHK, Shenzhen)</div>
+
+              <div class="paper-title">
+                Information Ban and Human Capital Investment
+              </div>
+
+              <div class="authors">
+                with Bobby Lin (Cornell) and David Park (CUHK, Shenzhen)
+              </div>
+
             </div>
           </div>
         </div>
+
 
         <div class="paper-item">
           <div class="paper-line">
+
             <div class="paper-number">[2]</div>
+
             <div class="paper-content">
-              <div class="paper-title">Accounting Information and Real Options: Evidence from Oil Drilling Activity</div>
-              <div class="authors">with Songyi Han (BI Norwegian Business School)</div>
+
+              <div class="paper-title">
+                Accounting Information and Real Options: Evidence from Oil Drilling Activity
+              </div>
+
+              <div class="authors">
+                with Songyi Han (BI Norwegian Business School)
+              </div>
+
             </div>
           </div>
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- VITAE -->
     <section id="vitae" class="page">
-      <iframe class="cv-frame" src="cv.pdf"></iframe>
+
+      <iframe
+        class="cv-frame"
+        src="cv.pdf"
+      ></iframe>
 
       <p>
-        <a href="cv.pdf" target="_blank">Download CV PDF</a>
+        <a href="cv.pdf" target="_blank">
+          Download CV PDF
+        </a>
       </p>
+
     </section>
 
+
+    <!-- TEACHING -->
     <section id="teaching" class="page">
+
       <p>
-        My teaching emphasizes being readily available to students and motivating why the material matters. I often use examples from my professional experience as an auditor and advisor, as well as real-world business cases, to connect accounting concepts to practice.
+        My teaching emphasizes three pillars:
       </p>
 
-      <div class="teaching-heading">Instructor, Cornell University</div>
+      <ol class="teaching-pillars">
+
+        <li>
+          <strong>Show students why the material matters.</strong>
+          I draw on my professional experience at PwC Korea to connect accounting concepts to real-world practice.
+        </li>
+
+        <li>
+          <strong>Be readily available as students learn.</strong>
+          I actively encourage students to use office hours and create a welcoming environment where they feel comfortable asking questions.
+        </li>
+
+        <li>
+          <strong>Use new technologies to make accounting information more accessible.</strong>
+          I developed a custom GPT, <em>Annual Report Analyst</em>, that helps students explore real companies’ annual reports, disclosures, and risks.
+        </li>
+
+      </ol>
+
+
+      <div class="teaching-heading">
+        Instructor, Cornell University
+      </div>
 
       <p>
-        <strong>Financial Accounting</strong>, Fall 2025. Student evaluation: 5.0/5.0 median rating.
+        Fall 2025, Fall 2024
+      </p>
+
+      <p>
+        <strong>Financial Accounting</strong> (Undergraduate and Master)<br>
+        Average instructor rating: 4.3/5.0 (median: 5.0/5.0)
+      </p>
+
+      <p>
+        <strong>Selected student comments:</strong>
       </p>
 
       <blockquote>
-        “I liked Michael.”
+        “I wanted to take this opportunity to express my appreciation for your hard work and support… Your explanations and insights really helped me grasp the concepts in accounting, and I truly enjoyed your classes.”
       </blockquote>
-
-      <blockquote>
-        “The instructor is very eager in office hour and ready to answer any questions.”
-      </blockquote>
-
-      <blockquote>
-        “I enjoyed the teacher a lot.”
-      </blockquote>
-
-      <p>
-        <strong>Financial Accounting</strong>, Fall 2024. Student evaluation: 5.0/5.0 median rating.
-      </p>
 
       <blockquote>
         “The lectures are very well organized and do a good job of presenting the information.”
       </blockquote>
 
       <blockquote>
-        “I wanted to take this opportunity to express my appreciation for your hard work and support... Your explanations and insights really helped me grasp the concepts in accounting, and I truly enjoyed your classes.”
+        “When the instructor shared learnings from his professional career.”
       </blockquote>
 
       <blockquote>
-        “When the instructor shared learnings from his professional career.”
-        <br>
-        <span class="quote-context">— Response to “What was the most valuable class session?”</span>
+        “The instructor is very eager in office hour and ready to answer any questions.”
       </blockquote>
 
-      <div class="teaching-heading">Teaching Assistant</div>
+
+      <div class="teaching-heading">
+        Teaching Assistant
+      </div>
+
       <ul>
         <li>Cornell University, 2022–2025</li>
         <li>Seoul National University, 2020–2022</li>
         <li>Indiana University, Fall 2015</li>
       </ul>
+
     </section>
+
   </main>
+
 
   <footer>
     © Michael J. Lee. Last updated 2026.
   </footer>
+
 
   <script>
     function showPage(pageId) {
@@ -587,5 +755,6 @@
 
     showPage('about');
   </script>
+
 </body>
 </html>
