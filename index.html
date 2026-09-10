@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Michael Lee | Cornell Accounting Ph.D. Candidate</title>
-  <meta name="description" content="Michael Lee is a Cornell Accounting Ph.D. Candidate on the 2026-27 academic job market. His research examines how accounting information shapes corporate investment decisions, particularly under uncertainty, using NLP- and LLM-based textual analysis and novel data." />
+  <meta name="description" content="Michael Lee is a Cornell Accounting Ph.D. Candidate on the 2026-27 academic job market. His research examines how accounting information shapes corporate investment decisions, particularly under uncertainty, using NLP- and LLM-based textual analysis and novel datasets, including data on oil drilling activities, housing construction, and satellite imagery." />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RH1S2YCPRT"></script>
@@ -270,6 +270,10 @@
       margin-bottom: 18px;
     }
 
+    .cv-mobile {
+      display: none;
+    }
+
     .teaching-pillars {
       margin: 10px 0 24px;
       padding-left: 28px;
@@ -359,8 +363,13 @@
         margin-right: 16px;
       }
 
-      .cv-frame {
-        height: 620px;
+      .cv-desktop {
+        display: none;
+      }
+
+      .cv-mobile {
+        display: block;
+        height: 800px;
       }
 
       .paper-line {
@@ -417,7 +426,7 @@
           </div>
 
           <p>
-            My research examines how accounting information shapes corporate investment decisions, particularly under uncertainty. I combine NLP- and LLM-based textual analysis with novel data, including drilling activities, housing constructions, and satellite imagery.
+            My research examines how accounting information shapes corporate investment decisions, particularly under uncertainty. I combine NLP- and LLM-based textual analysis with novel datasets, including data on oil drilling activities, housing construction, and satellite imagery.
           </p>
 
           <p>
@@ -459,7 +468,7 @@
         <div class="research-heading">Research Interests</div>
 
         <p>
-          My research examines how accounting information shapes corporate investment decisions, particularly under uncertainty. I combine NLP- and LLM-based textual analysis with novel data, including drilling activities, housing constructions, and satellite imagery.
+          My research examines how accounting information shapes corporate investment decisions, particularly under uncertainty. I combine NLP- and LLM-based textual analysis with novel datasets, including data on oil drilling activities, housing construction, and satellite imagery.
         </p>
       </div>
 
@@ -632,7 +641,19 @@
     <!-- VITAE -->
     <section id="vitae" class="page">
 
-      <iframe class="cv-frame" src="cv.pdf"></iframe>
+      <!-- Desktop: native PDF viewer -->
+      <iframe
+        class="cv-frame cv-desktop"
+        src="cv.pdf"
+        title="Michael J. Lee CV"
+      ></iframe>
+
+      <!-- Mobile: Google PDF viewer for reliable multi-page scrolling -->
+      <iframe
+        class="cv-frame cv-mobile"
+        src="https://docs.google.com/gview?embedded=true&url=https%3A%2F%2Fmichael-j-lee.github.io%2Fcv.pdf"
+        title="Michael J. Lee CV"
+      ></iframe>
 
       <p>
         <a href="cv.pdf" target="_blank">
@@ -662,7 +683,7 @@
 
         <li>
           <strong>Use new technologies.</strong>
-          Develop a CustomGPT tool for teaching and apply it to real company disclosures.
+          Develop custom GPT tools for teaching and apply them to real company disclosures.
         </li>
       </ol>
 
