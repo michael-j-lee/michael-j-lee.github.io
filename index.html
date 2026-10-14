@@ -769,15 +769,21 @@
     <!-- VITAE -->
     <section id="vitae" class="page">
 
+      <!-- Desktop PDF viewer -->
       <iframe
         class="cv-frame cv-desktop"
         src="cv.pdf"
         title="Michael J. Lee CV"
       ></iframe>
 
+      <!--
+        Mobile PDF viewer:
+        no src on initial page load, so desktop refreshes never load gview.
+        It is loaded only when a mobile user opens the Vitae tab.
+      -->
       <iframe
         class="cv-frame cv-mobile"
-        src="https://docs.google.com/gview?embedded=true&url=https%3A%2F%2Fmichael-j-lee.github.io%2Fcv.pdf"
+        data-src="https://docs.google.com/gview?embedded=true&url=https%3A%2F%2Fmichael-j-lee.github.io%2Fcv.pdf"
         title="Michael J. Lee CV"
       ></iframe>
 
@@ -861,6 +867,16 @@
   </footer>
 
   <script>
+    function loadMobileCV() {
+      if (window.matchMedia('(max-width: 760px)').matches) {
+        const mobileCV = document.querySelector('.cv-mobile');
+
+        if (mobileCV && !mobileCV.getAttribute('src')) {
+          mobileCV.setAttribute('src', mobileCV.getAttribute('data-src'));
+        }
+      }
+    }
+
     function showPage(pageId) {
       const pages = document.querySelectorAll('.page');
       const navLinks = document.querySelectorAll('.nav-links a');
@@ -870,6 +886,10 @@
 
       document.getElementById(pageId).classList.add('active');
       document.getElementById('nav-' + pageId).classList.add('active');
+
+      if (pageId === 'vitae') {
+        loadMobileCV();
+      }
 
       window.scrollTo(0, 0);
     }
